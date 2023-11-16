@@ -1,4 +1,4 @@
-# Pattern name
+# Graph data structure
 
 Microsoft Graph API Design Pattern
 
