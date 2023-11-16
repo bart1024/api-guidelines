@@ -2,7 +2,8 @@
 
 Microsoft Graph API Design Pattern
 
-*Provide a short description of the pattern.*
+*A graph is a data structure that represents the many-to-many relationships between nodes.
+Note that a tree is just an acyclic directed graph and should be modeled accordingly.*
 
 
 ## Problem
