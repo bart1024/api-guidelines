@@ -8,9 +8,8 @@ Note that a tree is just an acyclic directed graph and should be modeled accordi
 
 ## Problem
 
-*Describe the business context relevant for the pattern.*
-
-*Provide a short description of the problem.*
+Clients may have a need to represent dynamic relationships between their data.
+In these cases, the relationships themselves becomes part of the client data, and need to be modeled to show both the data being related and the relationships between the data.
 
 ## Solution
 
