@@ -1,3 +1,7 @@
+TODO do you want to describe different representations of graphs?
+TODO do you want to call out a tree specifically?
+
+
 # Graph data structure
 
 Microsoft Graph API Design Pattern
@@ -13,9 +17,20 @@ In these cases, the relationships themselves becomes part of the client data, an
 
 ## Solution
 
-*Describe how to implement the solution to solve the problem.*
+A graph is represented by its nodes, each of which navigate to its related nodes.
+Each node has its own value:
+```
+<EntityType Name="node">
+  <Property Name="data" Type="..." />
+  <NavigationProperty Name="subnodes" Type="self.node" ContainsTarget="false" />
+</EntityType>
 
-*Describe related patterns.*
+<EntityContainer Name="container">
+  <EntitySet Name="nodes" EntityType="self.node" />
+</EntityContainer>
+```
+
+Generally, more specific naming is desired. 
 
 ## When to use this pattern
 
